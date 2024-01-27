@@ -16,7 +16,7 @@ struct Bitacora {
     string razonFalla;
 };
 
-// Función de lectura del archivo
+
 void leerArchivo(const string& bitacora, vector<Bitacora>& bitacora1) {
     ifstream archivo(bitacora);
 
@@ -44,7 +44,7 @@ void leerArchivo(const string& bitacora, vector<Bitacora>& bitacora1) {
     archivo.close();
 }
 
-// Funciones para QuickSort
+
 int partition(vector<Bitacora>& bitacora, int low, int high) {
     string pivot = bitacora[high].ipOrigen;
     int i = (low - 1);
